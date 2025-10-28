@@ -1,4 +1,6 @@
 import { Card } from '@/components/ui/card';
+import plantHandGrowth from '@/assets/plant-hand-growth.jpg';
+import ecoTeam from '@/assets/eco-investment-team.jpg';
 
 const About = () => {
   return (
@@ -38,8 +40,26 @@ const About = () => {
             </Card>
           </div>
 
-          {/* Company Story */}
-          <div className="max-w-4xl mx-auto text-center mb-16">
+      {/* Team Image - Background image: eco-investment-team.jpg */}
+      <div className="max-w-6xl mx-auto mb-16 rounded-xl overflow-hidden hover-zoom">
+        <img 
+          src={ecoTeam} 
+          alt="Eco investment team working together"
+          className="w-full h-96 object-cover"
+        />
+      </div>
+
+      {/* Company Story - Feature image: plant-hand-growth.jpg */}
+      <div className="max-w-4xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="hover-zoom rounded-xl overflow-hidden">
+            <img 
+              src={plantHandGrowth} 
+              alt="Hand planting sapling representing growth"
+              className="w-full h-80 object-cover"
+            />
+          </div>
+          <div className="text-left">
             <h2 className="text-3xl font-bold mb-6">Our Story</h2>
             <p className="text-lg text-muted-foreground mb-6">
               Founded in 2019, TerraVerde emerged from a simple belief: financial growth and environmental sustainability are not mutually exclusive. Our founders, veterans of the real estate and renewable energy sectors, recognized the untapped potential in eco-conscious investments.
@@ -48,6 +68,8 @@ const About = () => {
               Today, we manage over ₹120 Crores across diverse sustainable portfolios, serving 5,200+ investors who believe in the power of green finance. Every investment made through TerraVerde contributes to a healthier planet while generating competitive returns.
             </p>
           </div>
+        </div>
+      </div>
 
           {/* Timeline */}
           <div className="max-w-4xl mx-auto">

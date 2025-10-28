@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
+import mapBangalore from '@/assets/map-bangalore.png';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -185,15 +186,13 @@ const Contact = () => {
                 </div>
               </Card>
 
-              {/* Map Placeholder */}
-              <Card className="overflow-hidden">
-                <div className="h-64 bg-secondary/30 flex items-center justify-center">
-                  <div className="text-center">
-                    <i className="fas fa-map-marked-alt text-6xl text-muted-foreground mb-4"></i>
-                    <p className="text-muted-foreground">Bangalore Office Location</p>
-                    <p className="text-sm text-muted-foreground">MG Road, Bangalore</p>
-                  </div>
-                </div>
+              {/* Map - Static image: map-bangalore.png */}
+              <Card className="overflow-hidden hover-zoom">
+                <img 
+                  src={mapBangalore} 
+                  alt="Bangalore office location map"
+                  className="w-full h-80 object-cover"
+                />
               </Card>
             </div>
           </div>

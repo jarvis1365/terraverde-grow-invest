@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import heroGreenInvestment from '@/assets/hero-green-investment.jpg';
 
 const Hero = () => {
   const [offset, setOffset] = useState(0);
@@ -15,12 +16,12 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Parallax Background */}
+      {/* Parallax Background - Background image: hero-green-investment.jpg */}
       <div
         className="absolute inset-0 z-0"
         style={{
           transform: `translateY(${offset * 0.5}px)`,
-          backgroundImage: 'linear-gradient(135deg, hsl(162 76% 16.5% / 0.95), hsl(162 70% 25% / 0.9)), url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+          backgroundImage: `linear-gradient(135deg, hsl(162 76% 16.5% / 0.95), hsl(162 70% 25% / 0.9)), url(${heroGreenInvestment})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

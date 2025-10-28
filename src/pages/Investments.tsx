@@ -1,5 +1,8 @@
 import InvestmentCard from '@/components/InvestmentCard';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import solarEnergyFarm from '@/assets/solar-energy-farm.jpg';
+import windEnergy from '@/assets/wind-energy-turbines.jpg';
+import agricultureField from '@/assets/agriculture-field.jpg';
 
 const Investments = () => {
   const greenBonds = [
@@ -111,11 +114,18 @@ const Investments = () => {
 
   return (
     <div className="min-h-screen pt-24">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6 fade-in-up">Investment Opportunities</h1>
-          <p className="text-xl max-w-3xl mx-auto opacity-90 fade-in-up" style={{ animationDelay: '0.2s' }}>
+      {/* Hero Section - Background image: solar-energy-farm.jpg */}
+      <section 
+        className="py-20 relative"
+        style={{
+          backgroundImage: `linear-gradient(135deg, hsl(162 76% 16.5% / 0.9), hsl(162 70% 25% / 0.85)), url(${solarEnergyFarm})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-5xl font-bold mb-6 fade-in-up text-white">Investment Opportunities</h1>
+          <p className="text-xl max-w-3xl mx-auto opacity-90 fade-in-up text-white" style={{ animationDelay: '0.2s' }}>
             Explore our curated portfolio of sustainable investment products designed for both financial growth and environmental impact
           </p>
         </div>

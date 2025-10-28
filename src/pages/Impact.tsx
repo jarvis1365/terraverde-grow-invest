@@ -1,6 +1,8 @@
 import AnimatedCounter from '@/components/AnimatedCounter';
 import { Card } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
+import treePlantingImpact from '@/assets/tree-planting-impact.jpg';
+import agricultureField from '@/assets/agriculture-field.jpg';
 
 const Impact = () => {
   const impactMetrics = [
@@ -63,11 +65,18 @@ const Impact = () => {
 
   return (
     <div className="min-h-screen pt-24">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6 fade-in-up">Our Environmental Impact</h1>
-          <p className="text-xl max-w-3xl mx-auto opacity-90 fade-in-up" style={{ animationDelay: '0.2s' }}>
+      {/* Hero Section - Background image: tree-planting-impact.jpg */}
+      <section 
+        className="py-20 relative overflow-hidden"
+        style={{
+          backgroundImage: `linear-gradient(135deg, hsl(162 76% 16.5% / 0.9), hsl(162 70% 25% / 0.85)), url(${treePlantingImpact})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h1 className="text-5xl font-bold mb-6 fade-in-up text-white">Our Environmental Impact</h1>
+          <p className="text-xl max-w-3xl mx-auto opacity-90 fade-in-up text-white" style={{ animationDelay: '0.2s' }}>
             Measuring the positive change we're creating for our planet and communities
           </p>
         </div>
@@ -115,9 +124,17 @@ const Impact = () => {
         </div>
       </section>
 
-      {/* Impact Stories */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+      {/* Impact Stories - Background image: agriculture-field.jpg */}
+      <section 
+        className="py-20 relative"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, hsl(var(--background) / 0.95), hsl(var(--background) / 0.98)), url(${agricultureField})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+        }}
+      >
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-12 text-center">Real Impact Stories</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <Card className="p-8 hover-lift">

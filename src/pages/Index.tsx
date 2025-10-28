@@ -4,7 +4,7 @@ import AnimatedCounter from '@/components/AnimatedCounter';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
-import heroImage from '@/assets/hero-bg.jpg';
+import moneyPlantCoins from '@/assets/money-plant-coins.jpg';
 import testimonial1 from '@/assets/testimonial-1.jpg';
 import testimonial2 from '@/assets/testimonial-2.jpg';
 

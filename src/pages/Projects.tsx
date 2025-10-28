@@ -1,8 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import solarProject from '@/assets/project-solar.jpg';
+import solarProject from '@/assets/solar-energy-farm.jpg';
 import forestProject from '@/assets/project-forest.jpg';
 import waterProject from '@/assets/project-water.jpg';
 import realEstateProject from '@/assets/project-real-estate.jpg';
+import windEnergy from '@/assets/wind-energy-turbines.jpg';
 
 const Projects = () => {
   const projects = [
@@ -49,7 +50,7 @@ const Projects = () => {
     {
       title: 'WindFlow Energy Park',
       category: 'Wind Energy',
-      image: solarProject,
+      image: windEnergy,
       capacity: '30 MW',
       investment: '₹55 Crores',
       status: 'Operational',
