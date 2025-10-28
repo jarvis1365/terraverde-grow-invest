@@ -4,7 +4,16 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import About from "./pages/About";
+import Investments from "./pages/Investments";
+import Projects from "./pages/Projects";
+import Impact from "./pages/Impact";
+import Contact from "./pages/Contact";
+import Apply from "./pages/Apply";
 import NotFound from "./pages/NotFound";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 const queryClient = new QueryClient();
 
@@ -14,11 +23,19 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/about" element={<About />} />
+          <Route path="/investments" element={<Investments />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/impact" element={<Impact />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/apply" element={<Apply />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
+        <FloatingWhatsApp />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
