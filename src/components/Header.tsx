@@ -67,7 +67,7 @@ const Header = () => {
             <Button 
               asChild
               size="sm"
-              className="bg-gradient-to-r from-accent to-accent/90 text-foreground font-semibold text-xs"
+              className="bg-gradient-to-r from-accent to-accent/90 text-foreground font-semibold text-xs transition-none hover:bg-gradient-to-r hover:from-accent hover:to-accent/90"
             >
               <Link to="/investments">View Opportunities</Link>
             </Button>
@@ -75,7 +75,7 @@ const Header = () => {
               asChild
               size="sm"
               variant="outline"
-              className="text-xs"
+              className="text-xs transition-none hover:bg-background hover:text-foreground"
             >
               <Link to="/contact">Contact</Link>
             </Button>
