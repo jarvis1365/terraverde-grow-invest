@@ -137,9 +137,9 @@ const Index = () => {
             <Button 
               asChild
               size="lg"
-              className="bg-gradient-to-r from-accent to-accent/90 text-foreground font-semibold hover:shadow-lg text-lg px-8"
+              className="bg-accent text-foreground font-semibold"
             >
-              <Link to="/investments">View All Investment Options</Link>
+              <Link to="/investments">View Opportunities</Link>
             </Button>
           </div>
         </div>
@@ -216,25 +216,25 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
+      <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Start Your Sustainable Investment Journey?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join TerraVerde today and be part of the green finance revolution
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               asChild
               size="lg"
-              className="bg-accent text-foreground font-semibold hover:bg-accent/90 text-lg px-8 py-6 pulse-glow"
+              className="bg-accent text-foreground font-semibold"
             >
-              <Link to="/apply">Apply Now</Link>
+              <Link to="/apply">Start Investing</Link>
             </Button>
             <Button 
               asChild
               size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
+              variant="secondary"
+              className="font-semibold"
             >
               <Link to="/contact">Contact Us</Link>
             </Button>
