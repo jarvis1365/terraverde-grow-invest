@@ -137,7 +137,6 @@ const Index = () => {
             <Button 
               asChild
               size="lg"
-              className="bg-accent text-foreground font-semibold"
             >
               <Link to="/investments">View Opportunities</Link>
             </Button>
@@ -226,7 +225,6 @@ const Index = () => {
             <Button 
               asChild
               size="lg"
-              className="bg-accent text-foreground font-semibold"
             >
               <Link to="/apply">Start Investing</Link>
             </Button>
@@ -234,7 +232,6 @@ const Index = () => {
               asChild
               size="lg"
               variant="secondary"
-              className="font-semibold"
             >
               <Link to="/contact">Contact Us</Link>
             </Button>
