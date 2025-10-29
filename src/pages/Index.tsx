@@ -129,13 +129,7 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {investments.map((investment, index) => (
-              <div 
-                key={index} 
-                className="fade-in-up" 
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                <InvestmentCard {...investment} />
-              </div>
+              <InvestmentCard key={index} {...investment} />
             ))}
           </div>
 
@@ -155,25 +149,25 @@ const Index = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="fade-in-up">
+            <div>
               <div className="text-5xl font-bold text-accent mb-2">
                 <AnimatedCounter end={120} prefix="₹" suffix=" Cr+" />
               </div>
               <div className="text-lg">Assets Under Management</div>
             </div>
-            <div className="fade-in-up" style={{ animationDelay: '0.1s' }}>
+            <div>
               <div className="text-5xl font-bold text-accent mb-2">
                 <AnimatedCounter end={5200} suffix="+" />
               </div>
               <div className="text-lg">Active Investors</div>
             </div>
-            <div className="fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <div>
               <div className="text-5xl font-bold text-accent mb-2">
                 <AnimatedCounter end={25000} suffix="+" />
               </div>
               <div className="text-lg">Trees Planted</div>
             </div>
-            <div className="fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <div>
               <div className="text-5xl font-bold text-accent mb-2">
                 <AnimatedCounter end={15} suffix="%" />
               </div>
