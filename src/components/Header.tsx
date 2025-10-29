@@ -27,7 +27,7 @@ const Header = () => {
 
   return (
     <header 
-      className="fixed top-0 left-0 right-0 z-50 bg-background shadow-lg transition-all duration-400"
+      className="fixed top-0 left-0 right-0 z-50 bg-background shadow-lg"
     >
       <nav className="container mx-auto px-4 py-5 md:py-4">
         <div className="flex items-center justify-between gap-4">
@@ -67,7 +67,7 @@ const Header = () => {
             <Button 
               asChild
               size="sm"
-              className="bg-gradient-to-r from-accent to-accent/90 text-foreground font-semibold text-xs transition-none hover:bg-gradient-to-r hover:from-accent hover:to-accent/90"
+              className="bg-gradient-to-r from-accent to-accent/90 text-foreground font-semibold text-xs !transition-none hover:bg-gradient-to-r hover:from-accent hover:to-accent/90"
             >
               <Link to="/investments">View Opportunities</Link>
             </Button>
@@ -75,7 +75,7 @@ const Header = () => {
               asChild
               size="sm"
               variant="outline"
-              className="text-xs transition-none hover:bg-background hover:text-foreground"
+              className="text-xs !transition-none hover:bg-background hover:text-foreground"
             >
               <Link to="/contact">Contact</Link>
             </Button>
