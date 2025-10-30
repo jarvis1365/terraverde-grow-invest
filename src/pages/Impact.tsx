@@ -209,19 +209,19 @@ const Impact = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 my-12 bg-[#E8F5E9]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-12">Environmental Certifications</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold mb-16 text-foreground">Environmental Certifications</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-5xl mx-auto">
             {[
               { name: 'Carbon Neutral Verified', icon: 'fas fa-leaf' },
               { name: 'ISO 14001 Certified', icon: 'fas fa-certificate' },
               { name: 'ESG Excellence Award', icon: 'fas fa-award' },
               { name: 'Green Finance Certified', icon: 'fas fa-check-circle' }
             ].map((cert, index) => (
-              <div key={index} className="text-center">
-                <i className={`${cert.icon} text-5xl text-accent mb-4`}></i>
-                <p className="font-semibold">{cert.name}</p>
+              <div key={index} className="text-center group">
+                <i className={`${cert.icon} text-6xl text-accent mb-6 transition-transform duration-300 group-hover:scale-110 inline-block`}></i>
+                <p className="font-semibold text-foreground">{cert.name}</p>
               </div>
             ))}
           </div>

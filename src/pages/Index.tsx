@@ -117,32 +117,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Investment Options */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">Investment Opportunities</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Choose from our curated portfolio of sustainable investment products
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {investments.map((investment, index) => (
-              <InvestmentCard key={index} {...investment} />
-            ))}
-          </div>
-
-          <div className="text-center">
-            <Button 
-              asChild
-              size="lg"
-            >
-              <Link to="/investments">View All Services</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* Stats Section */}
       <section className="py-20 bg-primary text-primary-foreground">
