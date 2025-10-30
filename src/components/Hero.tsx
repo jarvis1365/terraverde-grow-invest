@@ -21,7 +21,7 @@ const Hero = () => {
         className="absolute inset-0 z-0"
         style={{
           transform: `translateY(${offset * 0.5}px)`,
-          backgroundImage: `linear-gradient(135deg, hsl(162 76% 16.5% / 0.95), hsl(162 70% 25% / 0.9)), url(${heroGreenInvestment})`,
+          backgroundImage: `linear-gradient(135deg, hsl(150 70% 25% / 0.92), hsl(155 65% 30% / 0.88)), url(${heroGreenInvestment})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -30,33 +30,12 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <h1 className="font-montserrat font-bold mb-6 fade-in-up" style={{ fontSize: '2.2rem', lineHeight: '1.3', animationDelay: '0.2s' }}>
             Grow Wealth. Live Free. <span className="text-accent">Build Your Retirement with Tissue Culture Teak Farming.</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-white/90 fade-in-up" style={{ animationDelay: '0.4s' }}>
-            Real estate growth meets ecological regeneration. Sustainable investment in land development and eco-agriculture.
+          <p className="font-poppins mb-8 fade-in-up" style={{ fontSize: '1.1rem', color: '#E3E3E3', animationDelay: '0.4s' }}>
+            Empowering individuals and families to achieve financial freedom through sustainable teakwood plantations backed by modern tissue culture technology.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in-up" style={{ animationDelay: '0.6s' }}>
-            <Button 
-              asChild
-              size="lg"
-              className="bg-accent text-foreground font-semibold hover:bg-accent/90 text-lg px-8 py-6 pulse-glow"
-            >
-              <Link to="/apply">
-                Start Investing <i className="fas fa-arrow-right ml-2"></i>
-              </Link>
-            </Button>
-            <Button 
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
-            >
-              <Link to="/investments">
-                View Opportunities
-              </Link>
-            </Button>
-          </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 fade-in-up" style={{ animationDelay: '0.8s' }}>

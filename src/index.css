@@ -8,43 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* TerraVerde Eco-Finance Theme */
-    --background: 0 0% 97.6%; /* Off-White #F9F9F9 */
-    --foreground: 0 0% 13.3%; /* Charcoal #222222 */
+    /* AranyaKrishi Nature-Inspired Theme */
+    --background: 40 40% 97%; /* Warm Beige #FAF8F3 */
+    --foreground: 30 15% 15%; /* Warm Dark Brown #2A2520 */
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 13.3%;
+    --card-foreground: 30 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 13.3%;
+    --popover-foreground: 30 15% 15%;
 
-    --primary: 162 76% 16.5%; /* Deep Emerald #0A4D3C */
-    --primary-foreground: 0 0% 97.6%;
+    --primary: 150 70% 35%; /* Vibrant Forest Green #1B8F5C */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 120 60% 90%; /* Soft Mint #D8F3DC */
-    --secondary-foreground: 162 76% 16.5%;
+    --secondary: 140 50% 85%; /* Mint Green #C8E6D0 */
+    --secondary-foreground: 150 70% 25%;
 
-    --muted: 120 60% 90%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 40 30% 92%;
+    --muted-foreground: 30 10% 40%;
 
-    --accent: 43 77% 52%; /* Royal Gold #D4AF37 */
-    --accent-foreground: 0 0% 13.3%;
+    --accent: 42 88% 55%; /* Bright Gold #F4C430 */
+    --accent-foreground: 30 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 120 40% 85%;
-    --input: 120 40% 85%;
-    --ring: 162 76% 16.5%;
+    --border: 140 30% 85%;
+    --input: 140 30% 85%;
+    --ring: 150 70% 35%;
 
     --radius: 0.75rem;
     
     /* Custom gradients and effects */
-    --gradient-primary: linear-gradient(135deg, hsl(162 76% 16.5%), hsl(162 70% 25%));
-    --gradient-accent: linear-gradient(135deg, hsl(43 77% 52%), hsl(43 85% 60%));
-    --gradient-hero: linear-gradient(135deg, hsl(162 76% 16.5% / 0.95), hsl(162 70% 25% / 0.9));
-    --shadow-luxury: 0 20px 60px -15px hsl(162 76% 16.5% / 0.3);
-    --shadow-glow: 0 0 40px hsl(43 77% 52% / 0.4);
+    --gradient-primary: linear-gradient(135deg, hsl(150 70% 35%), hsl(155 65% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(42 88% 55%), hsl(48 92% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(150 70% 25% / 0.92), hsl(155 65% 30% / 0.88));
+    --gradient-nature: linear-gradient(180deg, hsl(140 50% 85%), hsl(40 40% 95%));
+    --shadow-luxury: 0 20px 60px -15px hsl(150 70% 35% / 0.25);
+    --shadow-glow: 0 0 50px hsl(42 88% 55% / 0.5);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -157,10 +158,10 @@ All colors MUST be HSL.
   
   @keyframes pulse-glow {
     0%, 100% {
-      box-shadow: 0 0 20px hsl(43 77% 52% / 0.4);
+      box-shadow: 0 0 20px hsl(42 88% 55% / 0.5);
     }
     50% {
-      box-shadow: 0 0 40px hsl(43 77% 52% / 0.8);
+      box-shadow: 0 0 40px hsl(42 88% 55% / 0.9);
     }
   }
   
@@ -189,6 +190,56 @@ All colors MUST be HSL.
     }
     50% {
       transform: translateY(-5px);
+    }
+  }
+  
+  /* Fade in animations */
+  .fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Slide up animation */
+  .slide-up {
+    animation: slideUp 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }

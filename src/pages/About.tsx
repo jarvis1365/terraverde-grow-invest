@@ -20,22 +20,22 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <Card className="p-8 hover-lift">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mb-6">
-                <i className="fas fa-bullseye text-white text-2xl"></i>
-              </div>
-              <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-              <p className="text-muted-foreground text-lg">
-                To democratize sustainable investing by providing accessible, transparent, and profitable investment opportunities that contribute to environmental restoration and social welfare.
-              </p>
-            </Card>
-
-            <Card className="p-8 hover-lift">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mb-6">
                 <i className="fas fa-eye text-white text-2xl"></i>
               </div>
               <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
               <p className="text-muted-foreground text-lg">
-                To become India's leading sustainable investment platform, managing ₹1000 Crores by 2028 while planting 1 million trees and reducing 100,000 tons of CO₂ emissions.
+                To become India's most trusted partner in sustainable teakwood investments, transforming how people plan their financial future through eco-positive assets.
+              </p>
+            </Card>
+
+            <Card className="p-8 hover-lift">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mb-6">
+                <i className="fas fa-bullseye text-white text-2xl"></i>
+              </div>
+              <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+              <p className="text-muted-foreground text-lg">
+                To enable 1 lakh individuals to achieve financial freedom and retirement security through scientifically managed teakwood plantations by 2030.
               </p>
             </Card>
           </div>
@@ -62,41 +62,48 @@ const About = () => {
           <div className="text-left">
             <h2 className="text-3xl font-bold mb-6">Our Story</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Founded in 2019, TerraVerde emerged from a simple belief: financial growth and environmental sustainability are not mutually exclusive. Our founders, veterans of the real estate and renewable energy sectors, recognized the untapped potential in eco-conscious investments.
+              Founded with a vision to merge nature and financial independence, AranyaKrishi empowers individuals to achieve long-term passive income and retirement stability through tissue culture teakwood farming.
+            </p>
+            <p className="text-lg text-muted-foreground mb-6">
+              We believe true wealth grows over time — not in volatile markets, but in the soil beneath your feet.
             </p>
             <p className="text-lg text-muted-foreground">
-              Today, we manage over ₹120 Crores across diverse sustainable portfolios, serving 5,200+ investors who believe in the power of green finance. Every investment made through TerraVerde contributes to a healthier planet while generating competitive returns.
+              By investing in tissue culture teak, you plant more than a tree — you plant your future freedom.
             </p>
           </div>
         </div>
       </div>
 
-          {/* Timeline */}
+          {/* Philosophy */}
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Our Journey</h2>
-            <div className="space-y-8">
-              {[
-                { year: '2019', title: 'Foundation', description: 'TerraVerde established with initial ₹5 Crore fund' },
-                { year: '2020', title: 'First Green Bond', description: 'Launched our first green bond offering, raising ₹20 Crores' },
-                { year: '2021', title: 'Agriculture Expansion', description: 'Entered sustainable agriculture with 50+ farm partnerships' },
-                { year: '2022', title: 'Renewable Energy', description: 'Launched renewable energy portfolio with solar and wind projects' },
-                { year: '2023', title: 'Major Milestone', description: 'Crossed ₹100 Crore AUM and 5,000 investors' },
-                { year: '2024', title: 'Impact Recognition', description: 'Awarded "Best Sustainable Investment Platform" by ESG India' }
-              ].map((milestone, index) => (
-                <div 
-                  key={index} 
-                  className="flex items-start fade-in-left" 
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="w-24 flex-shrink-0">
-                    <div className="text-2xl font-bold text-accent">{milestone.year}</div>
-                  </div>
-                  <div className="flex-1 ml-8 pb-8 border-l-2 border-accent pl-8">
-                    <h3 className="text-xl font-semibold mb-2">{milestone.title}</h3>
-                    <p className="text-muted-foreground">{milestone.description}</p>
-                  </div>
-                </div>
-              ))}
+            <h2 className="text-3xl font-bold mb-12 text-center">Our Philosophy</h2>
+            <div className="space-y-6">
+              <p className="text-xl text-center text-foreground font-semibold">
+                At AranyaKrishi, we believe wealth should be sustainable, stress-free, and purposeful.
+              </p>
+              <p className="text-lg text-muted-foreground text-center">
+                Our approach helps individuals:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                <Card className="p-6 text-center hover-lift">
+                  <i className="fas fa-coins text-4xl text-accent mb-4"></i>
+                  <h3 className="text-lg font-semibold mb-2">Passive Income</h3>
+                  <p className="text-muted-foreground">Generate passive income that supports a relaxed lifestyle</p>
+                </Card>
+                <Card className="p-6 text-center hover-lift">
+                  <i className="fas fa-umbrella text-4xl text-accent mb-4"></i>
+                  <h3 className="text-lg font-semibold mb-2">Secure Retirement</h3>
+                  <p className="text-muted-foreground">Build a secure retirement corpus through natural growth</p>
+                </Card>
+                <Card className="p-6 text-center hover-lift">
+                  <i className="fas fa-tree text-4xl text-accent mb-4"></i>
+                  <h3 className="text-lg font-semibold mb-2">Green Legacy</h3>
+                  <p className="text-muted-foreground">Leave behind a legacy of green wealth for the next generation</p>
+                </Card>
+              </div>
+              <p className="text-xl text-center text-foreground font-semibold mt-8">
+                Your journey to financial freedom starts with one sapling.
+              </p>
             </div>
           </div>
         </div>

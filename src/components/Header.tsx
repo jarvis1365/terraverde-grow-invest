@@ -19,7 +19,7 @@ const Header = () => {
   const navLinks = [
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
-    { to: '/investments', label: 'Investments' },
+    { to: '/investments', label: 'Services' },
     { to: '/projects', label: 'Projects' },
     { to: '/impact', label: 'Impact' },
     { to: '/contact', label: 'Contact' },
@@ -54,31 +54,10 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <Button 
-              asChild
-              className="bg-gradient-to-r from-accent to-accent/90 text-foreground font-semibold hover:shadow-lg pulse-glow"
-            >
-              <Link to="/apply">Apply Now</Link>
-            </Button>
           </div>
 
-          {/* Mobile Action Buttons */}
+          {/* Mobile Menu Toggle */}
           <div className="flex md:hidden items-center gap-2">
-            <Button 
-              asChild
-              size="sm"
-              className="bg-gradient-to-r from-accent to-accent/90 text-foreground font-semibold text-xs !transition-none hover:bg-gradient-to-r hover:from-accent hover:to-accent/90"
-            >
-              <Link to="/investments">View Opportunities</Link>
-            </Button>
-            <Button 
-              asChild
-              size="sm"
-              variant="outline"
-              className="text-xs !transition-none hover:bg-background hover:text-foreground"
-            >
-              <Link to="/contact">Contact</Link>
-            </Button>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-foreground p-2"
@@ -105,12 +84,6 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <Button 
-              asChild
-              className="w-full bg-gradient-to-r from-accent to-accent/90 text-foreground font-semibold"
-            >
-              <Link to="/apply" onClick={() => setIsMobileMenuOpen(false)}>Apply Now</Link>
-            </Button>
           </div>
         )}
       </nav>

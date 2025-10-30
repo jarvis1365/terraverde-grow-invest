@@ -77,7 +77,7 @@ const Index = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">Why Choose TerraVerde?</h2>
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Why Choose AranyaKrishi?</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Combining financial growth with environmental responsibility
             </p>
@@ -138,7 +138,7 @@ const Index = () => {
               asChild
               size="lg"
             >
-              <Link to="/investments">View Opportunities</Link>
+              <Link to="/investments">View All Services</Link>
             </Button>
           </div>
         </div>
@@ -215,27 +215,12 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Start Your Sustainable Investment Journey?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Join TerraVerde today and be part of the green finance revolution
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              asChild
-              size="lg"
-            >
-              <Link to="/apply">Start Investing</Link>
-            </Button>
-            <Button 
-              asChild
-              size="lg"
-              variant="secondary"
-            >
-              <Link to="/contact">Contact Us</Link>
-            </Button>
-          </div>
         </div>
       </section>
     </div>
