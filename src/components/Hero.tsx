@@ -28,28 +28,28 @@ const Hero = () => {
       />
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10 text-center text-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="font-montserrat font-bold mb-6 fade-in-up" style={{ fontSize: '2.2rem', lineHeight: '1.3', animationDelay: '0.2s' }}>
+          <h1 className="font-montserrat font-bold mb-6 fade-in-up px-2" style={{ fontSize: 'clamp(1.5rem, 4.5vw, 2.2rem)', lineHeight: '1.3', animationDelay: '0.2s' }}>
             Grow Wealth. Live Free. <span className="text-accent">Build Your Retirement with Tissue Culture Teak Farming.</span>
           </h1>
-          <p className="font-poppins mb-8 fade-in-up" style={{ fontSize: '1.1rem', color: '#E3E3E3', animationDelay: '0.4s' }}>
+          <p className="font-poppins mb-8 fade-in-up px-4" style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)', color: '#E3E3E3', animationDelay: '0.4s' }}>
             Empowering individuals and families to achieve financial freedom through sustainable teakwood plantations backed by modern tissue culture technology.
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 fade-in-up" style={{ animationDelay: '0.8s' }}>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-accent mb-2">₹120Cr+</div>
-              <div className="text-sm md:text-base text-white/80">Assets Managed</div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16 fade-in-up px-4" style={{ animationDelay: '0.8s' }}>
+            <div className="py-4">
+              <div className="text-3xl sm:text-4xl font-bold text-accent mb-2">₹120Cr+</div>
+              <div className="text-sm sm:text-base text-white/80">Assets Managed</div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-accent mb-2">5,200+</div>
-              <div className="text-sm md:text-base text-white/80">Investors</div>
+            <div className="py-4">
+              <div className="text-3xl sm:text-4xl font-bold text-accent mb-2">5,200+</div>
+              <div className="text-sm sm:text-base text-white/80">Investors</div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-accent mb-2">25,000+</div>
-              <div className="text-sm md:text-base text-white/80">Trees Planted</div>
+            <div className="py-4">
+              <div className="text-3xl sm:text-4xl font-bold text-accent mb-2">25,000+</div>
+              <div className="text-sm sm:text-base text-white/80">Trees Planted</div>
             </div>
           </div>
         </div>

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
@@ -60,13 +60,13 @@ const Footer = () => {
             <p className="text-sm text-primary-foreground/80 mb-4">
               Subscribe to get updates on sustainable investments
             </p>
-            <div className="flex">
+            <div className="flex flex-col sm:flex-row gap-2">
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 px-4 py-2 rounded-l-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+                className="flex-1 px-4 py-2 rounded-lg sm:rounded-l-lg sm:rounded-r-none text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
               />
-              <button className="bg-accent text-foreground px-4 py-2 rounded-r-lg font-semibold hover:bg-accent/90 transition-colors">
+              <button className="bg-accent text-foreground px-6 py-2 rounded-lg sm:rounded-l-none sm:rounded-r-lg font-semibold hover:bg-accent/90 transition-colors">
                 <i className="fas fa-paper-plane"></i>
               </button>
             </div>

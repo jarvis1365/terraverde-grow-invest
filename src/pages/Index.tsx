@@ -74,42 +74,42 @@ const Index = () => {
       <Hero />
 
       {/* Features Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">Why Choose AranyaKrishi?</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16 px-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">Why Choose AranyaKrishi?</h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               Combining financial growth with environmental responsibility
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="hover-lift text-center p-8">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mx-auto mb-6">
-                <i className="fas fa-shield-alt text-white text-3xl"></i>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <Card className="hover-lift text-center p-6 sm:p-8">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <i className="fas fa-shield-alt text-white text-2xl sm:text-3xl"></i>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Secure & Regulated</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Secure & Regulated</h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 SEBI-registered investments with complete compliance and investor protection
               </p>
             </Card>
 
-            <Card className="hover-lift text-center p-8">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mx-auto mb-6">
-                <i className="fas fa-chart-line text-white text-3xl"></i>
+            <Card className="hover-lift text-center p-6 sm:p-8">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <i className="fas fa-chart-line text-white text-2xl sm:text-3xl"></i>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Proven Returns</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Proven Returns</h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Track record of consistent 10-15% annual returns across our portfolios
               </p>
             </Card>
 
-            <Card className="hover-lift text-center p-8">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mx-auto mb-6">
-                <i className="fas fa-leaf text-white text-3xl"></i>
+            <Card className="hover-lift text-center p-6 sm:p-8">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <i className="fas fa-leaf text-white text-2xl sm:text-3xl"></i>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Sustainable Impact</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Sustainable Impact</h3>
+              <p className="text-sm sm:text-base text-muted-foreground">
                 Every investment contributes to carbon reduction and environmental restoration
               </p>
             </Card>
@@ -119,48 +119,48 @@ const Index = () => {
 
 
       {/* Stats Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-5xl font-bold text-accent mb-2">
+      <section className="py-16 sm:py-20 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
+            <div className="py-4">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-2">
                 <AnimatedCounter end={120} prefix="₹" suffix=" Cr+" />
               </div>
-              <div className="text-lg">Assets Under Management</div>
+              <div className="text-sm sm:text-base lg:text-lg text-primary-foreground/90">Assets Under Management</div>
             </div>
-            <div>
-              <div className="text-5xl font-bold text-accent mb-2">
+            <div className="py-4">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-2">
                 <AnimatedCounter end={5200} suffix="+" />
               </div>
-              <div className="text-lg">Active Investors</div>
+              <div className="text-sm sm:text-base lg:text-lg text-primary-foreground/90">Active Investors</div>
             </div>
-            <div>
-              <div className="text-5xl font-bold text-accent mb-2">
+            <div className="py-4">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-2">
                 <AnimatedCounter end={25000} suffix="+" />
               </div>
-              <div className="text-lg">Trees Planted</div>
+              <div className="text-sm sm:text-base lg:text-lg text-primary-foreground/90">Trees Planted</div>
             </div>
-            <div>
-              <div className="text-5xl font-bold text-accent mb-2">
+            <div className="py-4">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-accent mb-2">
                 <AnimatedCounter end={15} suffix="%" />
               </div>
-              <div className="text-lg">Average Annual Returns</div>
+              <div className="text-sm sm:text-base lg:text-lg text-primary-foreground/90">Average Annual Returns</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-foreground">What Our Investors Say</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16 px-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">What Our Investors Say</h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               Join thousands of satisfied investors building wealth sustainably
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <Card key={index} className="hover-lift p-8">
                 <div className="flex items-center mb-4">
@@ -189,12 +189,14 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Start Your Sustainable Investment Journey?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Join TerraVerde today and be part of the green finance revolution
-          </p>
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Start Your Sustainable Investment Journey?</h2>
+            <p className="text-lg sm:text-xl text-muted-foreground mb-8">
+              Join TerraVerde today and be part of the green finance revolution
+            </p>
+          </div>
         </div>
       </section>
     </div>

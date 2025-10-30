@@ -33,19 +33,19 @@ const Contact = () => {
   return (
     <div className="min-h-screen pt-24">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6 fade-in-up">Contact Us</h1>
-          <p className="text-xl max-w-3xl mx-auto opacity-90 fade-in-up" style={{ animationDelay: '0.2s' }}>
+      <section className="py-16 sm:py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 fade-in-up px-4">Contact Us</h1>
+          <p className="text-lg sm:text-xl max-w-3xl mx-auto opacity-90 fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
             Have questions? We're here to help you start your sustainable investment journey
           </p>
         </div>
       </section>
 
       {/* Contact Content */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
             {/* Contact Form */}
             <Card className="p-8">
               <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>

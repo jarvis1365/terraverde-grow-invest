@@ -116,26 +116,26 @@ const Investments = () => {
     <div className="min-h-screen pt-24">
       {/* Hero Section - Background image: solar-energy-farm.jpg */}
       <section 
-        className="py-20 relative"
+        className="py-16 sm:py-20 relative"
         style={{
           backgroundImage: `linear-gradient(135deg, hsl(162 76% 16.5% / 0.9), hsl(162 70% 25% / 0.85)), url(${solarEnergyFarm})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-5xl font-bold mb-6 fade-in-up text-white">Investment Opportunities</h1>
-          <p className="text-xl max-w-3xl mx-auto opacity-90 fade-in-up text-white" style={{ animationDelay: '0.2s' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 fade-in-up text-white px-4">Investment Opportunities</h1>
+          <p className="text-lg sm:text-xl max-w-3xl mx-auto opacity-90 fade-in-up text-white px-4" style={{ animationDelay: '0.2s' }}>
             Explore our curated portfolio of sustainable investment products designed for both financial growth and environmental impact
           </p>
         </div>
       </section>
 
       {/* Investment Categories */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-4 mb-12">
+            <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-2 sm:grid-cols-4 mb-8 sm:mb-12">
               <TabsTrigger value="all">All</TabsTrigger>
               <TabsTrigger value="bonds">Green Bonds</TabsTrigger>
               <TabsTrigger value="agriculture">Agriculture</TabsTrigger>
@@ -144,8 +144,8 @@ const Investments = () => {
 
             <TabsContent value="all" className="space-y-16">
               <div>
-                <h2 className="text-3xl font-bold mb-8">Green Bonds</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 px-4">Green Bonds</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                   {greenBonds.map((investment, index) => (
                     <div key={index} className="fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
                       <InvestmentCard {...investment} />
@@ -155,8 +155,8 @@ const Investments = () => {
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold mb-8">Agriculture Funds</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 px-4">Agriculture Funds</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                   {agricultureFunds.map((investment, index) => (
                     <div key={index} className="fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
                       <InvestmentCard {...investment} />
@@ -166,8 +166,8 @@ const Investments = () => {
               </div>
 
               <div>
-                <h2 className="text-3xl font-bold mb-8">Renewable Energy</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 px-4">Renewable Energy</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                   {renewableEnergy.map((investment, index) => (
                     <div key={index} className="fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
                       <InvestmentCard {...investment} />
@@ -178,7 +178,7 @@ const Investments = () => {
             </TabsContent>
 
             <TabsContent value="bonds">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 {greenBonds.map((investment, index) => (
                   <InvestmentCard key={index} {...investment} />
                 ))}
@@ -186,7 +186,7 @@ const Investments = () => {
             </TabsContent>
 
             <TabsContent value="agriculture">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 {agricultureFunds.map((investment, index) => (
                   <InvestmentCard key={index} {...investment} />
                 ))}
@@ -194,7 +194,7 @@ const Investments = () => {
             </TabsContent>
 
             <TabsContent value="renewable">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 {renewableEnergy.map((investment, index) => (
                   <InvestmentCard key={index} {...investment} />
                 ))}
@@ -205,10 +205,10 @@ const Investments = () => {
       </section>
 
       {/* Eligibility */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Eligibility Criteria</h2>
-          <div className="max-w-3xl mx-auto space-y-4">
+      <section className="py-16 sm:py-20 bg-secondary/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 sm:mb-12 text-center px-4">Eligibility Criteria</h2>
+          <div className="max-w-3xl mx-auto space-y-4 px-4">
             {[
               'Indian citizen or NRI with valid PAN card',
               'Minimum age: 18 years',

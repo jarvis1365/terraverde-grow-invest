@@ -6,19 +6,19 @@ const About = () => {
   return (
     <div className="min-h-screen pt-24">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6 fade-in-up">About TerraVerde</h1>
-          <p className="text-xl max-w-3xl mx-auto opacity-90 fade-in-up" style={{ animationDelay: '0.2s' }}>
+      <section className="py-16 sm:py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 fade-in-up px-4">About TerraVerde</h1>
+          <p className="text-lg sm:text-xl max-w-3xl mx-auto opacity-90 fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
             Pioneering sustainable investment solutions that deliver financial returns while creating positive environmental impact
           </p>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
             <Card className="p-8 hover-lift">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mb-6">
                 <i className="fas fa-eye text-white text-2xl"></i>
@@ -50,8 +50,8 @@ const About = () => {
       </div>
 
       {/* Company Story - Feature image: plant-hand-growth.jpg */}
-      <div className="max-w-4xl mx-auto mb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="max-w-4xl mx-auto mb-12 sm:mb-16 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <div className="hover-zoom rounded-xl overflow-hidden">
             <img 
               src={plantHandGrowth} 
@@ -75,8 +75,8 @@ const About = () => {
       </div>
 
           {/* Philosophy */}
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Our Philosophy</h2>
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-3xl font-bold mb-8 sm:mb-12 text-center">Our Philosophy</h2>
             <div className="space-y-6">
               <p className="text-xl text-center text-foreground font-semibold">
                 At AranyaKrishi, we believe wealth should be sustainable, stress-free, and purposeful.
@@ -110,10 +110,10 @@ const About = () => {
       </section>
 
       {/* Accreditations */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Accreditations & Certifications</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+      <section className="py-16 sm:py-20 bg-secondary/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 sm:mb-12 text-center px-4">Accreditations & Certifications</h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto">
             {[
               { name: 'SEBI Registered', icon: 'fas fa-certificate' },
               { name: 'ISO 14001 Certified', icon: 'fas fa-award' },
@@ -130,10 +130,10 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Our Core Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="py-16 sm:py-20 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 sm:mb-12 text-center px-4">Our Core Values</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 icon: 'fas fa-handshake',

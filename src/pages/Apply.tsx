@@ -101,10 +101,10 @@ const Apply = () => {
   return (
     <div className="min-h-screen pt-24 pb-20">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6 fade-in-up">Apply for Investment</h1>
-          <p className="text-xl max-w-3xl mx-auto opacity-90 fade-in-up" style={{ animationDelay: '0.2s' }}>
+      <section className="py-16 sm:py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 fade-in-up px-4">Apply for Investment</h1>
+          <p className="text-lg sm:text-xl max-w-3xl mx-auto opacity-90 fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
             Complete your application in 3 simple steps
           </p>
         </div>
@@ -112,7 +112,7 @@ const Apply = () => {
 
       {/* Application Form */}
       <section className="py-12 bg-background">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             {/* Progress Bar */}
             <div className="mb-12">
