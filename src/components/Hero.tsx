@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Invest Smart. <span className="text-accent">Grow Green.</span>
+            Grow Wealth. Live Free. <span className="text-accent">Build Your Retirement with Tissue Culture Teak Farming.</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 fade-in-up" style={{ animationDelay: '0.4s' }}>
             Real estate growth meets ecological regeneration. Sustainable investment in land development and eco-agriculture.
