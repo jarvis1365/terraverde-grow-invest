@@ -15,7 +15,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Parallax Background - Background image: hero-green-investment.jpg */}
       <div
         className="absolute inset-0 z-0"
@@ -37,21 +37,6 @@ const Hero = () => {
             Empowering individuals and families to achieve financial freedom through sustainable teakwood plantations backed by modern tissue culture technology.
           </p>
 
-          {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16 fade-in-up px-4" style={{ animationDelay: '0.8s' }}>
-            <div className="py-4">
-              <div className="text-3xl sm:text-4xl font-bold text-accent mb-2">₹120Cr+</div>
-              <div className="text-sm sm:text-base text-white/80">Assets Managed</div>
-            </div>
-            <div className="py-4">
-              <div className="text-3xl sm:text-4xl font-bold text-accent mb-2">5,200+</div>
-              <div className="text-sm sm:text-base text-white/80">Investors</div>
-            </div>
-            <div className="py-4">
-              <div className="text-3xl sm:text-4xl font-bold text-accent mb-2">25,000+</div>
-              <div className="text-sm sm:text-base text-white/80">Trees Planted</div>
-            </div>
-          </div>
         </div>
       </div>
 
