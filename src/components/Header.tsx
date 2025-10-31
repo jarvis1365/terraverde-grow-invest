@@ -1,7 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from '@/components/ui/navigation-menu';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,8 +29,17 @@ const Header = () => {
     { to: '/about', label: 'About' },
     { to: '/investments', label: 'Services' },
     { to: '/projects', label: 'Projects' },
-    { to: '/blog', label: 'Blog' },
+  ];
+
+  const pagesDropdown = [
+    { to: '/blog', label: 'Blogs' },
     { to: '/articles', label: 'Articles' },
+    { to: '/about-teakwood', label: 'About Teakwood' },
+    { to: '/our-team', label: 'Our Team' },
+    { to: '/faqs', label: "FAQ's" },
+  ];
+
+  const afterPagesLinks = [
     { to: '/impact', label: 'Impact' },
     { to: '/contact', label: 'Contact' },
   ];
@@ -56,6 +73,47 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            
+            {/* Pages Dropdown */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:bg-transparent data-[state=open]:bg-transparent">
+                    Pages
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[200px] gap-1 p-2 bg-background border border-border shadow-lg rounded-md">
+                      {pagesDropdown.map((link) => (
+                        <li key={link.to}>
+                          <NavigationMenuLink asChild>
+                            <Link
+                              to={link.to}
+                              className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary text-sm font-medium"
+                            >
+                              {link.label}
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+
+            {afterPagesLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname === link.to
+                    ? 'text-primary'
+                    : 'text-foreground/80'
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -73,6 +131,40 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in">
             {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`block text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname === link.to
+                    ? 'text-primary'
+                    : 'text-foreground/80'
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+            
+            {/* Pages Section in Mobile */}
+            <div className="border-t border-border pt-4">
+              <p className="text-xs font-semibold text-muted-foreground mb-2 uppercase">Pages</p>
+              {pagesDropdown.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block text-sm font-medium transition-colors hover:text-primary py-2 ${
+                    location.pathname === link.to
+                      ? 'text-primary'
+                      : 'text-foreground/80'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+
+            {afterPagesLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}

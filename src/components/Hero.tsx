@@ -5,6 +5,8 @@ import heroGreenInvestment from '@/assets/hero-green-investment.jpg';
 
 const Hero = () => {
   const [offset, setOffset] = useState(0);
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const animatedTexts = ['Passive Investment', 'Retirement Life'];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +14,13 @@ const Hero = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTextIndex((prev) => (prev + 1) % animatedTexts.length);
+    }, 2000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -30,13 +39,21 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="font-montserrat font-bold mb-6 fade-in-up px-2" style={{ fontSize: 'clamp(1.5rem, 4.5vw, 2.2rem)', lineHeight: '1.3', animationDelay: '0.2s' }}>
-            Grow Wealth. Live Free. <span className="text-accent">Build Your Retirement with Tissue Culture Teak Farming.</span>
+          <h1 className="font-montserrat font-bold mb-6 fade-in-up" style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', lineHeight: '1.2', animationDelay: '0.2s' }}>
+            Find Your Future
           </h1>
-          <p className="font-poppins mb-8 fade-in-up px-4" style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)', color: '#E3E3E3', animationDelay: '0.4s' }}>
+          <div className="h-20 flex items-center justify-center overflow-hidden mb-8">
+            <p 
+              key={currentTextIndex}
+              className="font-poppins font-semibold text-accent animate-fade-in" 
+              style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}
+            >
+              {animatedTexts[currentTextIndex]}
+            </p>
+          </div>
+          <p className="font-poppins fade-in-up px-4" style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)', color: '#E3E3E3', animationDelay: '0.4s' }}>
             Empowering individuals and families to achieve financial freedom through sustainable teakwood plantations backed by modern tissue culture technology.
           </p>
-
         </div>
       </div>
 

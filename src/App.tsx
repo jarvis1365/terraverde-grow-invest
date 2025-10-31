@@ -9,6 +9,9 @@ import Investments from "./pages/Investments";
 import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
 import Articles from "./pages/Articles";
+import AboutTeakwood from "./pages/AboutTeakwood";
+import OurTeam from "./pages/OurTeam";
+import FAQs from "./pages/FAQs";
 import Impact from "./pages/Impact";
 import Contact from "./pages/Contact";
 import Apply from "./pages/Apply";
@@ -33,6 +36,9 @@ const App = () => (
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/articles" element={<Articles />} />
+          <Route path="/about-teakwood" element={<AboutTeakwood />} />
+          <Route path="/our-team" element={<OurTeam />} />
+          <Route path="/faqs" element={<FAQs />} />
           <Route path="/impact" element={<Impact />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/apply" element={<Apply />} />
