@@ -50,24 +50,24 @@ const About = () => {
           </div>
 
       {/* Company Story - Feature image: plant-hand-growth.jpg */}
-      <div className="max-w-4xl mx-auto mb-12 sm:mb-16 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
-          <div className="hover-zoom rounded-xl overflow-hidden">
+      <div className="max-w-6xl mx-auto mb-16 sm:mb-20 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
+          <div className="hover-zoom rounded-xl overflow-hidden shadow-lg mb-8 md:mb-0">
             <img 
               src={plantHandGrowth} 
               alt="Hand planting sapling representing growth"
-              className="w-full h-80 object-cover"
+              className="w-full h-80 sm:h-96 object-cover"
             />
           </div>
-          <div className="text-left">
-            <h2 className="text-3xl font-bold mb-6">Our Story</h2>
-            <p className="text-lg text-muted-foreground mb-6">
+          <div className="text-left space-y-6">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-8">Our Story</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
               Founded with a vision to merge nature and financial independence, AranyaKrishi empowers individuals to achieve long-term passive income and retirement stability through tissue culture teakwood farming.
             </p>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               We believe true wealth grows over time — not in volatile markets, but in the soil beneath your feet.
             </p>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               By investing in tissue culture teak, you plant more than a tree — you plant your future freedom.
             </p>
           </div>
