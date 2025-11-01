@@ -27,7 +27,7 @@ const About = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto mb-16 sm:mb-20">
             <Card className="p-8 hover-lift">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mb-6">
                 <i className="fas fa-eye text-white text-2xl"></i>
@@ -50,7 +50,7 @@ const About = () => {
           </div>
 
       {/* Company Story - Feature image: plant-hand-growth.jpg */}
-      <div className="max-w-6xl mx-auto mb-16 sm:mb-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto mb-16 sm:mb-20 px-4 sm:px-6 lg:px-8 mt-16 sm:mt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
           <div className="hover-zoom rounded-xl overflow-hidden shadow-lg mb-8 md:mb-0">
             <img 
@@ -60,7 +60,7 @@ const About = () => {
             />
           </div>
           <div className="text-left space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-8">Our Story</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-8 mt-8 md:mt-0">Our Story</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Founded with a vision to merge nature and financial independence, AranyaKrishi empowers individuals to achieve long-term passive income and retirement stability through tissue culture teakwood farming.
             </p>
