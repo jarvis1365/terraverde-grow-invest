@@ -18,7 +18,16 @@ const About = () => {
       {/* Mission & Vision */}
       <section className="py-16 sm:py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
+          {/* Team Image - Background image: eco-investment-team.jpg */}
+          <div className="max-w-6xl mx-auto mb-12 sm:mb-16 rounded-xl overflow-hidden hover-zoom">
+            <img 
+              src={ecoTeam} 
+              alt="Eco investment team working together"
+              className="w-full h-96 object-cover"
+            />
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
             <Card className="p-8 hover-lift">
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mb-6">
                 <i className="fas fa-eye text-white text-2xl"></i>
@@ -39,15 +48,6 @@ const About = () => {
               </p>
             </Card>
           </div>
-
-      {/* Team Image - Background image: eco-investment-team.jpg */}
-      <div className="max-w-6xl mx-auto mb-16 rounded-xl overflow-hidden hover-zoom">
-        <img 
-          src={ecoTeam} 
-          alt="Eco investment team working together"
-          className="w-full h-96 object-cover"
-        />
-      </div>
 
       {/* Company Story - Feature image: plant-hand-growth.jpg */}
       <div className="max-w-4xl mx-auto mb-12 sm:mb-16 px-4">
