@@ -13,6 +13,8 @@ import AboutTeakwood from "./pages/AboutTeakwood";
 import OurTeam from "./pages/OurTeam";
 import FAQs from "./pages/FAQs";
 import Impact from "./pages/Impact";
+import OurImpact from "./pages/OurImpact";
+import OurProjects from "./pages/OurProjects";
 import Contact from "./pages/Contact";
 import Apply from "./pages/Apply";
 import NotFound from "./pages/NotFound";
@@ -40,6 +42,8 @@ const App = () => (
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/impact" element={<Impact />} />
+          <Route path="/our-impact" element={<OurImpact />} />
+          <Route path="/our-projects" element={<OurProjects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="*" element={<NotFound />} />

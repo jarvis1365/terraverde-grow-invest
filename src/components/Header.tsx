@@ -28,7 +28,6 @@ const Header = () => {
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
     { to: '/investments', label: 'Services' },
-    { to: '/projects', label: 'Projects' },
   ];
 
   const pagesDropdown = [
@@ -39,8 +38,12 @@ const Header = () => {
     { to: '/faqs', label: "FAQ's" },
   ];
 
+  const impactDropdown = [
+    { to: '/our-impact', label: 'Our Impact' },
+    { to: '/our-projects', label: 'Our Projects' },
+  ];
+
   const afterPagesLinks = [
-    { to: '/impact', label: 'Impact' },
     { to: '/contact', label: 'Contact' },
   ];
 
@@ -84,6 +87,33 @@ const Header = () => {
                   <NavigationMenuContent>
                     <ul className="grid w-[200px] gap-1 p-2 bg-background border border-border shadow-lg rounded-md">
                       {pagesDropdown.map((link) => (
+                        <li key={link.to}>
+                          <NavigationMenuLink asChild>
+                            <Link
+                              to={link.to}
+                              className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-primary/10 hover:text-primary focus:bg-primary/10 focus:text-primary text-sm font-medium"
+                            >
+                              {link.label}
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+
+            {/* Impact Dropdown */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm font-medium bg-transparent hover:bg-transparent data-[state=open]:bg-transparent">
+                    Impact
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[200px] gap-1 p-2 bg-background border border-border shadow-lg rounded-md">
+                      {impactDropdown.map((link) => (
                         <li key={link.to}>
                           <NavigationMenuLink asChild>
                             <Link
@@ -149,6 +179,25 @@ const Header = () => {
             <div className="border-t border-border pt-4">
               <p className="text-xs font-semibold text-muted-foreground mb-2 uppercase">Pages</p>
               {pagesDropdown.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block text-sm font-medium transition-colors hover:text-primary py-2 ${
+                    location.pathname === link.to
+                      ? 'text-primary'
+                      : 'text-foreground/80'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Impact Section in Mobile */}
+            <div className="border-t border-border pt-4">
+              <p className="text-xs font-semibold text-muted-foreground mb-2 uppercase">Impact</p>
+              {impactDropdown.map((link) => (
                 <Link
                   key={link.to}
                   to={link.to}
