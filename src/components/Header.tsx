@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import aranyaKrishiLogo from '@/assets/aranya-krishi-logo.png';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -54,11 +55,13 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-5 md:py-4">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 shrink-0">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center">
-              <i className="fas fa-leaf text-white text-xl"></i>
-            </div>
-            <span className="text-xl md:text-2xl font-bold text-primary">TerraVerde</span>
+          <Link to="/" className="flex items-center space-x-3 shrink-0">
+            <img 
+              src={aranyaKrishiLogo} 
+              alt="Aranya Krishi Logo" 
+              className="h-10 w-auto object-contain"
+            />
+            <span className="text-xl md:text-2xl font-bold text-primary">Aranya Krishi</span>
           </Link>
 
           {/* Desktop Navigation */}

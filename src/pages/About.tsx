@@ -1,7 +1,7 @@
 import { Card } from '@/components/ui/card';
 import plantHandGrowth from '@/assets/plant-hand-growth.jpg';
 import ecoTeam from '@/assets/eco-investment-team.jpg';
-import philosophyPlanting from '@/assets/philosophy-planting.jpg';
+import philosophyGrowth from '@/assets/philosophy-growth.jpg';
 
 const About = () => {
   return (
@@ -59,8 +59,8 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
               <div className="hover-zoom rounded-xl overflow-hidden shadow-lg">
                 <img 
-                  src={philosophyPlanting} 
-                  alt="Hands planting sapling"
+                  src={philosophyGrowth} 
+                  alt="Modern sustainable teakwood plantation"
                   className="w-full h-80 sm:h-96 object-cover"
                 />
               </div>
