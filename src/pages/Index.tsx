@@ -73,46 +73,36 @@ const Index = () => {
     <div className="min-h-screen">
       <Hero />
 
-      {/* Features Section */}
+      {/* Why Choose AranyaKrishi Section */}
       <section className="py-16 sm:py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16 px-4">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">Why Choose AranyaKrishi?</h2>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Combining financial growth with environmental responsibility
+          <div className="max-w-4xl mx-auto text-center px-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-foreground">Why Choose AranyaKrishi?</h2>
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">
+              Founded with a vision to unite nature and financial freedom, AranyaKrishi empowers individuals to create sustainable passive income and retirement stability through tissue culture teak wood farming. We believe true wealth grows naturally — in the soil, not the stock market. With every teak sapling, you're planting a future of financial independence, green prosperity, and a lasting legacy.
             </p>
+            <Link to="/about">
+              <Button size="lg" className="hover-lift">
+                Read More →
+              </Button>
+            </Link>
           </div>
+        </div>
+      </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            <Card className="hover-lift text-center p-6 sm:p-8">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <i className="fas fa-shield-alt text-white text-2xl sm:text-3xl"></i>
-              </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Secure & Regulated</h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                SEBI-registered investments with complete compliance and investor protection
-              </p>
-            </Card>
-
-            <Card className="hover-lift text-center p-6 sm:p-8">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <i className="fas fa-chart-line text-white text-2xl sm:text-3xl"></i>
-              </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Proven Returns</h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                Track record of consistent 10-15% annual returns across our portfolios
-              </p>
-            </Card>
-
-            <Card className="hover-lift text-center p-6 sm:p-8">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <i className="fas fa-leaf text-white text-2xl sm:text-3xl"></i>
-              </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Sustainable Impact</h3>
-              <p className="text-sm sm:text-base text-muted-foreground">
-                Every investment contributes to carbon reduction and environmental restoration
-              </p>
-            </Card>
+      {/* Services Section */}
+      <section className="py-16 sm:py-20 bg-secondary/30">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center px-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-foreground">Services That We Offer For You</h2>
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8">
+              At Aranya Krishi, we empower individuals at every stage of life to achieve financial freedom and retirement security through sustainable tissue culture teak wood farming. Our nature-backed investment programs — Prathama Plan for young earners, Madhyama Plan for mid-career professionals, and Visesha Plan for high-value investors — are designed to turn simple, strategic investments into long-term wealth. Whether you're building a corpus for retirement, seeking tax-free agricultural income, or investing in appreciating land assets, Aranya Krishi offers scientifically managed teakwood plantations that deliver passive income, capital growth, and a greener future.
+            </p>
+            <Link to="/investments">
+              <Button size="lg" className="hover-lift">
+                Read More →
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

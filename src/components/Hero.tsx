@@ -39,17 +39,16 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <h1 className="font-montserrat font-bold mb-6 fade-in-up" style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', lineHeight: '1.2', animationDelay: '0.2s' }}>
-            Find Your Future
-          </h1>
-          <div className="h-20 flex items-center justify-center overflow-hidden mb-8">
-            <p 
-              key={currentTextIndex}
-              className="font-poppins font-semibold text-accent animate-fade-in" 
-              style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}
-            >
-              {animatedTexts[currentTextIndex]}
-            </p>
+          <div className="mb-8 fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <h1 className="font-montserrat font-bold flex flex-wrap items-center justify-center gap-3 sm:gap-4" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', lineHeight: '1.2' }}>
+              <span className="text-white">Find Your Future</span>
+              <span 
+                key={currentTextIndex}
+                className="text-accent animate-fade-in"
+              >
+                {animatedTexts[currentTextIndex]}
+              </span>
+            </h1>
           </div>
           <p className="font-poppins fade-in-up px-4" style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)', color: '#E3E3E3', animationDelay: '0.4s' }}>
             Empowering individuals and families to achieve financial freedom through sustainable teakwood plantations backed by modern tissue culture technology.
