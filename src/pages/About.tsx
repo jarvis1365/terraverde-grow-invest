@@ -1,6 +1,7 @@
 import { Card } from '@/components/ui/card';
 import plantHandGrowth from '@/assets/plant-hand-growth.jpg';
 import ecoTeam from '@/assets/eco-investment-team.jpg';
+import philosophyPlanting from '@/assets/philosophy-planting.jpg';
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Company Overview */}
       <section className="py-16 sm:py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Team Image - Background image: eco-investment-team.jpg */}
@@ -25,28 +26,6 @@ const About = () => {
               alt="Eco investment team working together"
               className="w-full h-96 object-cover"
             />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto mb-16 sm:mb-20">
-            <Card className="p-8 hover-lift">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mb-6">
-                <i className="fas fa-eye text-white text-2xl"></i>
-              </div>
-              <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
-              <p className="text-muted-foreground text-lg">
-                To become India's most trusted partner in sustainable teakwood investments, transforming how people plan their financial future through eco-positive assets.
-              </p>
-            </Card>
-
-            <Card className="p-8 hover-lift">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mb-6">
-                <i className="fas fa-bullseye text-white text-2xl"></i>
-              </div>
-              <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-              <p className="text-muted-foreground text-lg">
-                To enable 1 lakh individuals to achieve financial freedom and retirement security through scientifically managed teakwood plantations by 2030.
-              </p>
-            </Card>
           </div>
 
       {/* Company Story - Feature image: plant-hand-growth.jpg */}
@@ -75,36 +54,62 @@ const About = () => {
       </div>
 
           {/* Philosophy */}
-          <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 sm:mb-12 text-center">Our Philosophy</h2>
-            <div className="space-y-6">
-              <p className="text-xl text-center text-foreground font-semibold">
-                At AranyaKrishi, we believe wealth should be sustainable, stress-free, and purposeful.
-              </p>
-              <p className="text-lg text-muted-foreground text-center">
-                Our approach helps individuals:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                <Card className="p-6 text-center hover-lift">
-                  <i className="fas fa-coins text-4xl text-accent mb-4"></i>
-                  <h3 className="text-lg font-semibold mb-2">Passive Income</h3>
-                  <p className="text-muted-foreground">Generate passive income that supports a relaxed lifestyle</p>
-                </Card>
-                <Card className="p-6 text-center hover-lift">
-                  <i className="fas fa-umbrella text-4xl text-accent mb-4"></i>
-                  <h3 className="text-lg font-semibold mb-2">Secure Retirement</h3>
-                  <p className="text-muted-foreground">Build a secure retirement corpus through natural growth</p>
-                </Card>
-                <Card className="p-6 text-center hover-lift">
-                  <i className="fas fa-tree text-4xl text-accent mb-4"></i>
-                  <h3 className="text-lg font-semibold mb-2">Green Legacy</h3>
-                  <p className="text-muted-foreground">Leave behind a legacy of green wealth for the next generation</p>
-                </Card>
+          <div className="max-w-6xl mx-auto px-4 mb-16 sm:mb-20">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center">Our Philosophy</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center">
+              <div className="hover-zoom rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src={philosophyPlanting} 
+                  alt="Hands planting sapling"
+                  className="w-full h-80 sm:h-96 object-cover"
+                />
               </div>
-              <p className="text-xl text-center text-foreground font-semibold mt-8">
-                Your journey to financial freedom starts with one sapling.
-              </p>
+              <div className="text-left space-y-6">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  At AranyaKrishi, we believe wealth should be sustainable, stress-free, and purposeful.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Our approach helps individuals:
+                </p>
+                <ul className="space-y-3 text-lg text-muted-foreground">
+                  <li className="flex items-start">
+                    <span className="mr-3">•</span>
+                    <span>Generate passive income that supports a relaxed lifestyle</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-3">•</span>
+                    <span>Build a secure retirement corpus through natural growth</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-3">•</span>
+                    <span>Leave behind a legacy of green wealth for the next generation.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+
+          {/* Vision & Mission */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto mb-16 sm:mb-20">
+            <Card className="p-8 hover-lift">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-accent/70 flex items-center justify-center mb-6">
+                <i className="fas fa-eye text-white text-2xl"></i>
+              </div>
+              <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
+              <p className="text-muted-foreground text-lg">
+                To become India's most trusted partner in sustainable teakwood investments, transforming how people plan their financial future through eco-positive assets.
+              </p>
+            </Card>
+
+            <Card className="p-8 hover-lift">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center mb-6">
+                <i className="fas fa-bullseye text-white text-2xl"></i>
+              </div>
+              <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+              <p className="text-muted-foreground text-lg">
+                To enable 1 lakh individuals to achieve financial freedom and retirement security through scientifically managed teakwood plantations by 2030.
+              </p>
+            </Card>
           </div>
         </div>
       </section>
